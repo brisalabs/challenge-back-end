@@ -32,7 +32,7 @@
 - **Avançado**
 
   - O sistema deve ser capaz de realizar transações PIX.
-  - Cada transação deve ser identificada de forma única por um UUID.
+  - Cada transação deve ser identificada de forma única por um id.
   - Cada transação deve conter a identificação do usuário que envia e do usuário que recebe o PIX, além do valor, claro.
   - O sistema deve ser capaz de persistir essas informações em um banco de dados relacional.
 
@@ -40,14 +40,15 @@
   - Adicionar um `docker-compose` e um `Dockerfile`.
   - Disponibilizar no repositório o arquivo JSON referente às rotas da aplicação.
   - Adicionar testes unitários.
+  - Adicionar tratação de erros de maneira global.
 
-## Entidades
+## Entidades :pencil2:
   - Usuários
-    - O usuário deve possuir nome (nome do usuário), telefone (telefone do usuário) e um id (tipo UUID).
+    - O usuário deve possuir nome (nome do usuário), telefone (telefone do usuário) e um id.
   - Chaves.
-    - A chave deve possuir um valor (referente a chave a ser salva), id (tipo UUID) e a relação com o usuário dono da chave.
+    - A entidade chaves deve possuir um valor (referente a chave a ser salva), id e a relação com o usuário dono da chave.
   - Transações.
-    - A transação deve possuir um valor (referente ao valor em R$ da transação), relação com quem envia e quem recebe o PIX (usuário que envia e usuário que recebe o PIX) e um id (tipo UUID).
+    - A transação deve possuir um valor (referente ao valor em R$ da transação), relação com quem envia e quem recebe o PIX (usuário que envia e usuário que recebe o PIX) e um id.
 
 ## Critérios de avaliação :memo:
 - Arquitetura
