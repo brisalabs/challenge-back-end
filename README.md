@@ -1,4 +1,4 @@
-## Desafio Front end Brisalabs :computer:
+## Desafio Back end Brisalabs :computer:
 
 - O desafio consiste no desenvolvimento de uma API REST utilizando as tecnologias listadas abaixo.
 - Caso não termine desenvolver todo o desafio, envia o que conseguir que nós avaliaremos com muito prazer.
