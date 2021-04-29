@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "logging": true,
+  "password": "brisapay",
+  "database": "brisapay",
+  "entities": ["./src/modules/**/domain/*.ts"],
+  "migrations": ["./src/infra/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/infra/database/migrations"
+  }
+}
