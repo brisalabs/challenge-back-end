@@ -1,10 +1,10 @@
 /* eslint-disable camelcase */
 import { v4 as uuid } from 'uuid';
 
-import { IUser } from '../dtos/IUser';
+import { IUserDTO } from './IUserDTO';
 
 class User {
-  id?: string;
+  id: string;
 
   name: string;
 
@@ -35,7 +35,7 @@ class User {
     password,
     phone_number,
     username,
-  }: IUser): User {
+  }: IUserDTO): User {
     const user = new User();
 
     Object.assign(user, {
