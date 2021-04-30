@@ -2,7 +2,7 @@ import { User } from '../../domain/user/entity';
 import { IUsersRepository } from '../IUsersRepository';
 
 class UserRepository implements IUsersRepository {
-  constructor(private users: User[]) {}
+  constructor(private users: User[] = []) {}
 
   async exists(email: string): Promise<boolean> {
     return this.users.some(user => user.email === email);
