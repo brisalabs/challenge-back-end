@@ -8,6 +8,10 @@ class UserRepository implements IUsersRepository {
     return this.users.some(user => user.email === email);
   }
 
+  async findByUserName(username: string): Promise<User> {
+    return this.users.find(user => user.username === username);
+  }
+
   async findByEmail(email: string): Promise<User> {
     return this.users.find(element => element.email === email);
   }

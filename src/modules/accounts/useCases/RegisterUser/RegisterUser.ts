@@ -25,6 +25,7 @@ class RegisterUser {
     }
 
     const userExists =
+      (await this.usersRepository.findByUserName(username)) ||
       (await this.usersRepository.findByEmail(email)) ||
       (await this.usersRepository.findByDocumentId(document_id_cpf));
 

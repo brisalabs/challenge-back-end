@@ -10,6 +10,10 @@ class UserRepository implements IUsersRepository {
     throw new Error('Method not implemented.');
   }
 
+  async findByUserName(username: string): Promise<User> {
+    throw new Error('Method not implemented.');
+  }
+
   async findById(id: string): Promise<User> {
     throw new Error('Method not implemented.');
   }
