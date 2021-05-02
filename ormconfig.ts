@@ -4,7 +4,7 @@ export default {
   type: 'postgres',
   host: 'localhost',
   logging: true,
-  port: process.env.POSTGRES_PORT,
+  port: process.env.POSTGRES_PORT_EXTERNAL,
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
