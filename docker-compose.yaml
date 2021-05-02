@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    container_name: brisapay-api
+    ports:
+      - 3335:3333
+    volumes:
+      - .:/usr/src/app
+
