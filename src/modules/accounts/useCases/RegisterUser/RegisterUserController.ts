@@ -1,0 +1,3 @@
+class RegisterUserController {}
+
+export { RegisterUserController };
