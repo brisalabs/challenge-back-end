@@ -22,7 +22,7 @@
     "dev": "tsnd -r tsconfig-paths/register  --inspect --transpile-only --ignore-watch node_modules --respawn src/infra/http/server.ts",
     "typeorm": "tsnd -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "lint": "eslint src --ext .ts",
-    "test": "jest  --verbose  --runInBand --detectOpenHandles"
+    "test": "jest  --verbose --detectOpenHandles"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",

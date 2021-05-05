@@ -1,5 +1,5 @@
-import { IUserDTO, User } from '../../domain/user/entity';
-import { IUsersRepository } from '../../repositories/IUsersRepository';
+import { IUserDTO, User } from '@modules/accounts/domain/user/entity';
+import { IUsersRepository } from '@modules/accounts/repositories';
 
 class RegisterUser {
   constructor(private usersRepository: IUsersRepository) {}
@@ -35,7 +35,7 @@ class RegisterUser {
 
     const userObject = new User();
 
-    const user = userObject.create({
+    const user = Object.assign(userObject, {
       document_id_cpf,
       email,
       name,

@@ -1,5 +1,5 @@
-import { User } from '../../domain/user/entity';
-import { IUsersRepository } from '../IUsersRepository';
+import { User } from '@modules/accounts/domain/user/entity';
+import { IUsersRepository } from '@modules/accounts/repositories';
 
 class MemoryUsersRepository implements IUsersRepository {
   constructor(private users: User[] = []) {}

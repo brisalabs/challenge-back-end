@@ -1,7 +1,6 @@
 /* eslint-disable camelcase */
+import { BaseEntity } from '@core/.';
 import { Column, Entity } from 'typeorm';
-
-import { BaseEntity } from '../../../../../core';
 
 @Entity('users')
 class User extends BaseEntity {

@@ -1,4 +1,4 @@
-import { User } from '../domain/user/entity';
+import { User } from '@modules/accounts/domain/user/entity';
 
 export interface IUsersRepository {
   exists(email: string): Promise<boolean>;
