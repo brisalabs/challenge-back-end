@@ -1,3 +1,0 @@
-class RegisterUserController {}
-
-export { RegisterUserController };
