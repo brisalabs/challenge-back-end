@@ -19,10 +19,10 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn src/infra/http/server.ts",
-    "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+    "dev": "tsnd -r tsconfig-paths/register  --inspect --transpile-only --ignore-watch node_modules --respawn src/infra/http/server.ts",
+    "typeorm": "tsnd -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "lint": "eslint src --ext .ts",
-    "test": "jest  --verbose"
+    "test": "jest  --verbose  --runInBand --detectOpenHandles"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
@@ -40,6 +40,7 @@
     "eslint-plugin-import-helpers": "^1.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.2.1",
-    "ts-node-dev": "^1.1.6"
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0"
   }
 }
