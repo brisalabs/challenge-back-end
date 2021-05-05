@@ -8,9 +8,9 @@ export default {
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
-  entities: ['./src/modules/**/domain/*.ts'],
-  migrations: ['./src/infra/database/migrations/*.ts'],
+  entities: ['./src/modules/**/domain/**/entity/*.ts'],
+  migrations: ['./src/infra/database/**/migrations/*.ts'],
   cli: {
-    migrationsDir: './src/infra/database/migrations',
+    migrationsDir: './src/infra/database/typeorm/migrations',
   },
 };

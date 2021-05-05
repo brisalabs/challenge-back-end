@@ -1,56 +1,27 @@
 /* eslint-disable camelcase */
-import { v4 as uuid } from 'uuid';
+import { Column, Entity } from 'typeorm';
 
-import { IUserDTO } from './IUserDTO';
+import { BaseEntity } from '../../../../../core';
 
-class User {
-  id: string;
-
+@Entity('users')
+class User extends BaseEntity {
+  @Column()
   name: string;
 
+  @Column({ unique: true })
   username: string;
 
+  @Column()
   password: string;
 
+  @Column({ unique: true })
   document_id_cpf: string;
 
+  @Column({ unique: true })
   email: string;
 
+  @Column({ unique: true })
   phone_number: string;
-
-  created_at: Date;
-
-  updated_at: Date;
-
-  constructor() {
-    if (!this.id) {
-      this.id = uuid();
-    }
-  }
-
-  public create({
-    name,
-    document_id_cpf,
-    email,
-    password,
-    phone_number,
-    username,
-  }: IUserDTO): User {
-    const user = new User();
-
-    Object.assign(user, {
-      name,
-      document_id_cpf,
-      email,
-      password,
-      phone_number,
-      username,
-      created_at: new Date(),
-      updated_at: new Date(),
-    });
-
-    return user;
-  }
 }
 
 export { User };

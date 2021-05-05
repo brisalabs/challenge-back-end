@@ -1,3 +1,5 @@
+import { getCustomRepository } from 'typeorm';
+
 import { User } from '../../domain/user/entity';
 import { IUsersRepository } from '../IUsersRepository';
 

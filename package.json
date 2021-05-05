@@ -22,7 +22,7 @@
     "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn src/infra/http/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "lint": "eslint src --ext .ts",
-    "test": "jest  --verbose --coverage"
+    "test": "jest  --verbose"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
