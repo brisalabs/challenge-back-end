@@ -12,10 +12,10 @@ describe('Domain User Entity', () => {
     username: 'mpgxc',
   };
 
-  const userObject = new User();
+  const user = new User();
 
   it('should be able to create an user with all props', () => {
-    const user = userObject.create(userProps);
+    Object.assign(user, userProps);
 
     expect(user).toMatchObject(userProps);
 
