@@ -1,4 +1,9 @@
 {
+  "name": "brisapay",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "author": "mpgxc",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
