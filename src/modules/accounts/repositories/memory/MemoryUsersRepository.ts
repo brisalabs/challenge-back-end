@@ -1,7 +1,7 @@
 import { User } from '../../domain/user/entity';
 import { IUsersRepository } from '../IUsersRepository';
 
-class UserRepository implements IUsersRepository {
+class MemoryUsersRepository implements IUsersRepository {
   constructor(private users: User[] = []) {}
 
   async exists(email: string): Promise<boolean> {
@@ -35,4 +35,4 @@ class UserRepository implements IUsersRepository {
   }
 }
 
-export { UserRepository };
+export { MemoryUsersRepository };
