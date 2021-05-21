@@ -2,7 +2,7 @@
 
 - O desafio consiste no desenvolvimento de uma API REST utilizando as tecnologias listadas abaixo.
 - Caso não termine desenvolver todo o desafio, envia o que conseguir que nós avaliaremos com muito prazer.
-- Crie um repositório público no GitHub e envie o link para o e-mail `deusimardamiao@grupobrisanet.com.br` com assunto `Desafio Back end Brisalabs`.
+- Crie um repositório público no GitHub e envie o link para o e-mail `wandecilenio.martins@grupobrisanet.com.br` com assunto `Desafio Back end Brisalabs`.
 
 ## Tecnologias :rocket:
 
